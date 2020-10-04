@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "segmed-ui"
+    }
+  },
+  "defaultProject": "segmed-ui",
+  "cli": {
+    "analytics": "07f0c4b5-a222-4110-a14a-db8ef4a01b96"
+  }
 }

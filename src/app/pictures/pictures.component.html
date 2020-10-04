@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="flex-row-segmed">
+        <div class="column-segmed" class="pictures--responsive" *ngFor="let pic of pictures; let i = index">
+            <a (click)="flagPhoto(pic.ID)">
+                <img class="img-fluid segmed__image" [src]="pic.picture_url"/>
+                <div class="segmed__block">
+                    <h3 class="segmed__text">{{pic.ui_flagged}} </h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

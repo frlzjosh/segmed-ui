@@ -1,0 +1,50 @@
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+.flex-row-segmed{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.column-segmed{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.pictures--responsive{
+    object-fit: cover;
+    height: auto;
+    @media (min-width: $bootstrap-sm){
+        width: 50%;
+        
+    }
+    @media (min-width: $bootstrap-lg) {
+        width: 33.333%;
+    }
+}
+img{
+    z-index: 0;
+}
+
+.segmed{
+    &__block{
+        transform: 0.5s ease;
+        opacity: 0;
+    }
+
+    &__text{
+        position: relative;
+        text-align: center;
+        color: white;
+        bottom: 0;
+    }
+}
+
+a:hover .segmed__image{
+    opacity: 0.3;
+}
+a:hover .segmed__block{
+    opacity: 1;
+}

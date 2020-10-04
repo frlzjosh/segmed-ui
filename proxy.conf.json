@@ -1,0 +1,6 @@
+{
+    "/get/all": {
+      "target": "http://18.222.159.26:3000",
+      "secure": false
+    }
+  }
