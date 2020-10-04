@@ -6,4 +6,5 @@ export interface Pictures{
     picture_url: string;
     is_flagged: boolean;
     custom_time: string;
+    metadata: string
 }

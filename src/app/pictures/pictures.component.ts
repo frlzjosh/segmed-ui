@@ -61,6 +61,7 @@ export class PicturesComponent implements OnInit, AfterContentChecked{
             picture_url: picture.picture_url,
             is_flagged: picture.is_flagged,
             custom_time: picture.custom_time,
+            metadata: picture.metadata,
             custom_time_decimal: date,
             ui_flagged: ''
           }
