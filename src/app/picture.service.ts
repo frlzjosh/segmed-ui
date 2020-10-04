@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class PictureService {
 
-  private host = "http://18.222.159.26:3000"
-  // private host = "http://localhost:3000"
+  // private host = "http://18.222.159.26:3000"
+  private host = "http://localhost:3000"
   constructor(private http:HttpClient) { }
 
   getAllPictures(): Observable<Pictures[]>{
