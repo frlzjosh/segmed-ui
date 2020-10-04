@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { Pictures } from './interfaces/Pictures';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
-
+import {environment } from './../environments/environment'
 @Injectable({
   providedIn: 'root'
 })
 export class PictureService {
 
-  // private host = "http://18.222.159.26:3000"
-  private host = "http://localhost:3000"
+  private host: string = environment.API_HOST
+
   constructor(private http:HttpClient) { }
 
   getAllPictures(): Observable<Pictures[]>{
