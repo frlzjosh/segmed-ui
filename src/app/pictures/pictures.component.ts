@@ -35,6 +35,7 @@ export class PicturesComponent implements OnInit, AfterContentChecked{
           el.ui_flagged = 'Not Flagged'
         }else{
           el.ui_flagged = 'Flagged'
+          el.times_flagged +=1
         }
       }
     })
@@ -52,7 +53,6 @@ export class PicturesComponent implements OnInit, AfterContentChecked{
     .subscribe((pictures: Pictures[])=>{
       pictures.map((picture: Pictures) =>{
           let date = new Date(picture.custom_time).getTime()
-          console.log('date: ', date)
           let pictureUpdated: PicturesUpdated = {
             ID: picture.ID,
             CreatedAt: picture.CreatedAt,
@@ -62,6 +62,7 @@ export class PicturesComponent implements OnInit, AfterContentChecked{
             is_flagged: picture.is_flagged,
             custom_time: picture.custom_time,
             metadata: picture.metadata,
+            times_flagged: picture.times_flagged,
             custom_time_decimal: date,
             ui_flagged: ''
           }
