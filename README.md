@@ -1,5 +1,6 @@
 # Hosted User Interface
 You can visit the hosted product here. https://suspicious-swartz-24f61f.netlify.app/
+If you'd like to see my Go back-end service you can find it here: https://github.com/frlzjosh/segmed-api
 
 # SegmedUi
 Project assessment for segmed. 
