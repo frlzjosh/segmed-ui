@@ -1,6 +1,8 @@
-# SegmedUi
+# Hosted User Interface
+You can visit the hosted product here. https://suspicious-swartz-24f61f.netlify.app/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+# SegmedUi
+Project assessment for segmed. 
 
 ## Development server
 
